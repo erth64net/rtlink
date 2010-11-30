@@ -1,6 +1,6 @@
 Description:
 
-This plugin offers a convenient way to reference ReqeustTracker tickets. Instead of using absolute links to tickets, you can use common short-hand RT####, where ####=Ticket Numberg
+This plugin offers a convenient way to reference ReqeustTracker tickets. Instead of using absolute links to tickets, you can use common short-hand RT####, where #### equals the Ticket Number
 
 Usage:
 
