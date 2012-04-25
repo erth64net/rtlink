@@ -34,7 +34,7 @@ class syntax_plugin_rtlink extends DokuWiki_Syntax_Plugin {
         return array(
             'author' => 'Gregg Berkholtz',
             'email'  => 'gregg@tocici.com',
-            'date'   => '2010-11-29',
+            'date'   => '2012-04-25',
             'name'   => 'rtlink Plugin',
             'desc'   => 'Generates links to RT:: Tickets.',
             'url'    => 'http://wiki.splitbrain.org/plugin:rtlink',
@@ -61,7 +61,7 @@ class syntax_plugin_rtlink extends DokuWiki_Syntax_Plugin {
      * Connect pattern to lexer
      */
     function connectTo($mode) {
-      $this->Lexer->addSpecialPattern('RT.*? ',$mode, substr(get_class($this),7));
+      $this->Lexer->addSpecialPattern('[rR][tT][0-9]+',$mode, substr(get_class($this),7));
     }
 
 
