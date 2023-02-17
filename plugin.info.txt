@@ -1,7 +1,7 @@
 base   rtlink
-author Gregg Berkholtz
-email  gregg@tocici.com
-date   2010-11-30
+author Gregg Berkholtz et al
+email  info@hopeconsultants.org
+date   2023-02-17
 name   rtlink plugin
 desc   Generates links to RT:: Tickets
-url    http://wiki.splitbrain.org/plugin:rtlink
+url    https://github.com/Hope-Consultants-International/rtlink
