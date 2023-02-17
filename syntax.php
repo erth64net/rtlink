@@ -68,7 +68,7 @@ class syntax_plugin_rtlink extends DokuWiki_Syntax_Plugin {
     /**
      * Handle the match
      */
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
         $match = html_entity_decode(substr($match, 2));
         return array($match);
     }
@@ -76,7 +76,7 @@ class syntax_plugin_rtlink extends DokuWiki_Syntax_Plugin {
     /**
      * Create output
      */
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
         global $rtlink_root_url;
         list($ticket) = $data;
         $url = $rtlink_root_url."Ticket/Display.html?id=$ticket";
